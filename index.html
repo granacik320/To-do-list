@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="CSS/styles.css" type="text/css" />
+        <title>TO DO LIST</title>
+    </head>
+    <body>
+        <div id="backgraundpopup" class="backgraundpopup">
+            <div class="popupadd">
+                <p class="addtxt">Add</p>
+                <svg xmlns="http://www.w3.org/2000/svg" id="closepopupadd" class="closepopupadd" height="24" width="24"><path d="M6.4 19 5 17.6l5.6-5.6L5 6.4 6.4 5l5.6 5.6L17.6 5 19 6.4 13.4 12l5.6 5.6-1.4 1.4-5.6-5.6Z"/></svg>
+                <div class="linebgadd">
+                    <div class="lineadd"></div>
+                </div>
+                <div class="circleadd">
+                    <svg onclick="add()" xmlns="http://www.w3.org/2000/svg"  class="svgadd" fill="#ffffff" height="48" width="48"><path d="M22.5 38V25.5H10v-3h12.5V10h3v12.5H38v3H25.5V38Z"/></svg>
+                </div>
+                <h3 id="alert">Add Task:</h3>
+                <textarea class="txtadd" id="txtadd"> </textarea>
+            </div>
+        </div>
+
+        <nav>
+            <div class="navbuttonadd">
+                <svg class="navbutton" onclick="openpopupall()" xmlns="http://www.w3.org/2000/svg" height="48" fill="#ffffff" width="48"><path d="M22.9 37.4V25.1H10.65v-2.2H22.9V10.6h2.2v12.3h12.3v2.2H25.1v12.3Z"/></svg>
+            </div>
+            <div class="navbuttonhome">
+                <svg class="navbutton"  xmlns="http://www.w3.org/2000/svg" height="48" fill="#ffffff" width="48"><path d="M9.15 40.85v-22.3L24.1 7.4l14.75 11.15v22.3h-10.8v-13.5h-8.1v13.5Zm2.2-2.2h6.45v-13.5h12.4v13.5h6.45v-19l-12.55-9.5-12.75 9.5ZM24 24.4Z"/></svg>
+            </div>
+        </nav>
+
+        <main>
+            <h1>TO DO LIST</h1>
+            <input placeholder="     Search" class="Search">
+            <div class="txtcat">
+                <span class="txtoncat1" id="spanall">All</span>
+                <span class="txtoncat2" id="spancomplited">Complited</span>
+                <span class="txtoncat3" id="spantodo">To Do</span>
+            </div>
+            <div class="linelong"></div>
+            <div class="category" id="line"></div>
+        </main>
+
+        <div class="scroll">
+            <article id="list"></article>
+        </div>
+    </body>
+    <script src="app.js"></script>
+</html>
+
+<!-- <svg xmlns="http://www.w3.org/2000/svg" height="20" fill="#ffffff" width="20">
+    <path d="M5.958 17.292q-.687 0-1.166-.48-.48-.479-.48-1.166V5.188h-.791V3.542h4.062v-.834h4.855v.834H16.5v1.646h-.812v10.458q0 .687-.48 1.166-.479.48-1.166.48Zm8.084-12.104H5.958v10.458h8.084Zm-6.48 8.729h1.646V6.896H7.562Zm3.23 0h1.646V6.896h-1.646ZM5.958 5.188v10.458Z"/>
+</svg>

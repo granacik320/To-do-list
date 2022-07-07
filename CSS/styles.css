@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: "Montserrat";
+}
+nav{
+    height: 100vh;
+    width: 80px;
+    background-color: #FF4B2B;
+    background-image: linear-gradient(to bottom right, #FF416C, #FF4B2B);
+}
+main{
+    position: absolute;
+    top: 50px;
+    left: 180px;
+}
+h1{
+    font-size: 32px;
+    font-weight: 300;
+    color: #FF416C;
+}
+body{
+    overflow-y: hidden;
+}
+main input{
+    margin-top: 40px;
+    font-size:18px;
+    font-weight: 500;
+    width: 452px;
+    height: 40px;
+    outline: none;
+    background-color: #c3c3c35b;
+    color: #ff416d9f;
+    border-radius: 7px;
+    border: 2px solid #c3c3c35b;
+    transition: 0.25s;
+}
+main input:focus {
+    border: 2px solid #c3c3c35b;
+    width: 552px;
+}
+nav div{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    transition: 0.25s;
+}
+nav div:hover{
+    width: 100px;
+}
+.navbutton{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -24px 0 0 -24px;
+} 
+.navbuttonhome{
+    background: #F03955;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.linelong{
+    position: relative;
+    top: 100px;
+    background: rgba(195, 195, 195, 0.33);
+    width: 60vw;
+    border-radius: 24px;
+    height: 3px;
+}
+.category{
+    transition: 0.35s;
+    left: 0px;
+    height: 3px;
+    border-radius: 24px;
+    top: 242px;
+    position: absolute;
+    width: 115px;
+    background: #FF416C;
+}
+.txtcat{
+    transition: 0.25s;
+    position: relative;
+    top: 92px;
+    width: 80vw;
+    flex-direction: row;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.txtcat span{
+    margin-left:50px;
+    cursor:pointer;
+}
+article{
+    direction: ltr;
+}
+.scroll{
+    position: absolute;
+    top: 325px;
+    left: 180px;
+    height:60vh;
+    width: 510px;
+    direction: rtl;
+    padding: 1rem;
+    overflow: auto;
+}
+/*article section*/
+.animatedelete{
+    opacity: 0;
+}
+.animatecheck{
+    color: #62e984;
+    text-decoration: line-through;
+}
+section{
+    position: relative;
+    left:0px;
+    font-size: 20px;
+    background: #EBEBEB;
+    width: 500px;
+    height: auto;
+    border-radius: 24px;
+    margin-bottom: 25px;
+    transition: 0.5s;
+}
+section span{
+    position: relative;
+    left:20px;
+}
+section div{
+    position: absolute;
+    background: #FF416C;
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    border-color: #FF416C;
+    color: #F5F5F5;
+    right: 0px;    
+}
+section input{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    right: 30px;
+    margin-top: 1px;
+}
+.backgraundpopup{
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0,0,0,0.4); 
+}
+.popupadd{
+    background-color: #F5F5F5;
+    margin: auto;
+    padding: 20px;
+    width: 410px;
+    height: 600px; 
+    border-radius: 24px;
+}
+.closepopupadd {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    right:-5px;
+    top:-45px;
+}
+.closepopupadd:hover{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.addtxt{
+    position: relative;
+    top:15px;
+    left:20px;
+    font-size: 32px;
+    font-weight: 300;
+}
+.circleadd{
+    width: 45px;
+    height:45px;
+    background: #FF416C;
+    border-radius: 24px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 190px;
+}
+
+.linebgadd{
+    top:50px;
+    position: relative;
+    left:-20px;
+    background: #D9D9D9;
+    width:450px;
+    height: 3px;
+}
+.lineadd{
+    position: absolute;
+    left:0px;
+    background: #ff416da6;
+    width:50px;
+    height: 3px;
+} 
+.svgadd{
+    margin: -1px;
+}
+.svgadd:hover{
+    cursor: pointer;
+    fill: #F5F5F5;
+}
+.txtadd{
+    width: 270px;
+    height: 344px;
+    position: relative;
+    margin: 65px;
+    margin-top: 100px;
+    resize: none;
+}
+.popupadd h3{
+    font-weight: 300;
+    font-size: 16px;
+    position: absolute;
+    top: 260px;
+    margin-left: 65px;
+}
