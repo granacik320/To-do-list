@@ -5,16 +5,17 @@ var line = document.getElementById("line");
 var id = 0;
 const buttons = document.getElementById("list");
 const categoryOption = document.querySelector(".txtcat")
+const search = document.getElementById("Search")
 
 //event listener
 buttons.addEventListener("click", check);
 categoryOption.addEventListener("click", category);
+search.addEventListener("input", searchope);
 
 //popup
 function openpopupall() {
     document.getElementById("backgraundpopup").style.display = "block";
 }
-
 document.getElementsByClassName("closepopupadd")[0].onclick = function() {
     document.getElementById("backgraundpopup").style.display = "none";
 }
@@ -46,6 +47,7 @@ function add(){
         id += 1;
         section.setAttribute("id",id);
         div.setAttribute("class","cl1");
+        section.setAttribute("class", task.value);
         input.setAttribute("type","checkbox");
         input.setAttribute("class","cl2");
     
@@ -83,6 +85,27 @@ function check(e){
         
         pelement.classList.toggle("animatecheck")
     }
+}
+
+//search
+function searchope(e){
+    const SearchInput = e.target.value;
+    const txtspan = buttons.childNodes
+    txtspan.forEach(function(pelement){
+        const inspan = document.getElementById("cl3")
+        console.log(pelement)
+        console.log(SearchInput)
+        if(SearchInput === ""){
+            console.log("xxxxxxxxxxxxxxxxxxxxxx")
+            pelement.style.display = "flex";
+        }else{
+            if(pelement.classList.contains(SearchInput)){
+                pelement.style.display = "flex";
+            }else{
+                pelement.style.display = "none";
+            }
+        }
+    })
 }
 
 //category
