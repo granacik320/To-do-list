@@ -93,8 +93,7 @@ function searchope(e){
     const txtspan = buttons.childNodes
     txtspan.forEach(function(pelement){
         const inspan = document.getElementById("cl3")
-        console.log(pelement)
-        console.log(SearchInput)
+        console.log(txtspan)
         if(SearchInput === ""){
             console.log("xxxxxxxxxxxxxxxxxxxxxx")
             pelement.style.display = "flex";
